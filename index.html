@@ -1,0 +1,43 @@
+<html>
+    <head>
+          <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+         <header class="header">
+            <div class="container">
+            <div class="input-fields">
+            <input type="date" id="date" onChange="changeDate(this)" >
+            <select  id="sectorItem" onChange="changeSector(this)">
+            <option value="select">SELECT</option>
+            <option value="HEALTH">HEALTH</option>
+            <option value="ENTERTAINMENT">ENTERTAINMENT</option>
+            <option value="EATING OUT">EATING OUT</option>
+            <option value="GROCERY">GROCERY</option>
+            <option value="UTILTY">UTILTY</option>
+            </select>
+            <input type="number" placeholder="expense ampount" id="number">
+            <button>SUBMIT</button>
+            </div>
+        </div>
+         </header>
+         <main class="main-body">
+            <div class="container">
+                <div class="table">
+                <table id="myTable">
+                    <tr>
+                        <th>DATE</th>
+                        <th>SECTOR</th>
+                        <th>EXPENSE AMOUNT</th>
+                        <th>ACTION</th>
+                    </tr>
+                </table>
+            </div>
+                
+            </div>
+            
+         </main>
+         
+    </body>
+    <script src="script.js"></script>
+</html>
